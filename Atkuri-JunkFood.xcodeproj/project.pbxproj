@@ -15,6 +15,7 @@
 		BA3FB8032051E1AE00E13C49 /* JunkFoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3FB8022051E1AE00E13C49 /* JunkFoodModel.swift */; };
 		BAEE48D420520A7D00224589 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE48D320520A7D00224589 /* ReportViewController.swift */; };
 		BAEE48D620520ED000224589 /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE48D520520ED000224589 /* RecordTableViewController.swift */; };
+		BAEE48D82052212800224589 /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE48D72052212800224589 /* AddNewItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BA3FB8022051E1AE00E13C49 /* JunkFoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunkFoodModel.swift; sourceTree = "<group>"; };
 		BAEE48D320520A7D00224589 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		BAEE48D520520ED000224589 /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
+		BAEE48D72052212800224589 /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BA3FB8022051E1AE00E13C49 /* JunkFoodModel.swift */,
 				BAEE48D320520A7D00224589 /* ReportViewController.swift */,
 				BAEE48D520520ED000224589 /* RecordTableViewController.swift */,
+				BAEE48D72052212800224589 /* AddNewItemViewController.swift */,
 			);
 			path = "Atkuri-JunkFood";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				BAEE48D420520A7D00224589 /* ReportViewController.swift in Sources */,
 				BA3FB7F32051E11F00E13C49 /* ViewController.swift in Sources */,
+				BAEE48D82052212800224589 /* AddNewItemViewController.swift in Sources */,
 				BA3FB8032051E1AE00E13C49 /* JunkFoodModel.swift in Sources */,
 				BA3FB7F12051E11F00E13C49 /* AppDelegate.swift in Sources */,
 				BAEE48D620520ED000224589 /* RecordTableViewController.swift in Sources */,

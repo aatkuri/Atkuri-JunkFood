@@ -1,5 +1,5 @@
 //
-//  ReportViewController.swift
+//  AddNewItemViewController.swift
 //  Atkuri-JunkFood
 //
 //  Created by Atkuri,Ashok on 3/8/18.
@@ -8,17 +8,14 @@
 
 import UIKit
 
-class ReportViewController: UIViewController {
+class AddNewItemViewController: UIViewController {
 
-    
-    @IBOutlet weak var BtnReset: UIButton!
-    @IBOutlet weak var TxtViewReport: UITextView!
-    
+    @IBOutlet weak var TxtItemName: UITextField!
+    @IBOutlet weak var TxtCalories: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AppDelegate.foodRecorderInstance.loadData()
-        TxtViewReport.text = AppDelegate.foodRecorderInstance.combinedReport()
+
         // Do any additional setup after loading the view.
     }
 
@@ -28,27 +25,17 @@ class ReportViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
-    
-    @IBAction func BtnResetOnClick(_ sender: Any) {
-        AppDelegate.foodRecorderInstance.reset()
-        TxtViewReport.text = AppDelegate.foodRecorderInstance.combinedReport()
+        if (TxtItemName.text != nil || TxtItemName.text != "") && (TxtCalories.text != nil && TxtCalories.text != "") {
+            AppDelegate.foodRecorderInstance.addNewItem(name: TxtItemName.text!, calories: Double(TxtCalories.text!)!)
+        }
     }
     
-    @IBAction func unwindFromTable(segue:UIStoryboardSegue){
-        TxtViewReport.text = AppDelegate.foodRecorderInstance.combinedReport()
-    }
-    
-    @IBAction func unwindFromNewItemCancel(segue:UIStoryboardSegue){
-        
-    }
-    
+
 }
